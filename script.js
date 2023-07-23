@@ -21,15 +21,17 @@ if (k) {
   $("#urlWS").text(AS_URL_BASE);
   $("#qrEdit").show();
 
-  function makeCode() {
-    var calId = $("#calId").val();
-    if (calId) {
-      var qrTargetUrl = url + "?k=" + encodeURI(calId);
-      $("#urlQR").text(qrTargetUrl);
-      $("#urlQR").attr("href", qrTargetUrl);
-      qrcode.makeCode(qrTargetUrl);
-    }
+ function makeCode() {
+  var calId = $("#calId").val();
+  if (calId) {
+    var encodedCalId = encodeURIComponent(calId); // Encode the calId
+    var qrTargetUrl = url + "?k=" + encodedCalId; // Pass the encoded calId to the URL
+    $("#urlQR").text(qrTargetUrl);
+    $("#urlQR").attr("href", qrTargetUrl);
+    qrcode.makeCode(qrTargetUrl);
   }
+}
+
 
   makeCode();
 
