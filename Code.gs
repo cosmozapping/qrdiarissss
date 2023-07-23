@@ -1,4 +1,6 @@
 function doGet(e) {
+ var encodedCalendarId = e.parameter.k;
+  var calendarId = decodeURIComponent(encodedCalendarId);
   var calendarId = e.parameter.k;
   var cal = CalendarApp.getCalendarById(calendarId);
   var now = new Date();
