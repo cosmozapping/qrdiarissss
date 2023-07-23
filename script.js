@@ -3,19 +3,22 @@ var url = document.location.href;
 console.log("Current URL:", url);
 var k = url.lastIndexOf("k=") > 0 ? url.substr(url.lastIndexOf("k=") + 2) : "";
 
+var qrcode = new QRCode("qrcode");
+var url = document.location.href;
+var k = url.lastIndexOf("k=") > 0 ? url.substr(url.lastIndexOf("k=") + 2) : "";
+
 if (k) {
-  console.log("Google Calendar ID (k parameter):", k);
+  console.log(k);
   $(".lds-ring").show();
-  fetch(AS_URL_BASE + '?k=' + k)
+  fetch(AS_URL_BASE + '?k=' + encodeURIComponent(k)) // Encode the k parameter
     .then(r => r.text())
     .then((r) => {
-      console.log("Fetched YouTube link from Google Apps Script:", r);
-      // document.write(r);
+      console.log(r);
       if (r) {
         document.location.replace(r);
       }
     })
-    .catch(err => console.log("Error fetching YouTube link:", err));
+    .catch(err => console.log(err))
 } else {
   // si no hay clave, mostrar generador de QR
   $("#urlWS").text(AS_URL_BASE);
