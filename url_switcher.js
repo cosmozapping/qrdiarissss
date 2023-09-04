@@ -11,11 +11,13 @@ function switchHrefBasedOnTime(timeUrlList) {
   let closestTimeDiff = Infinity;
   let targetUrl = null;
 
-  console.log(currentTime);
+  // console.log(currentTime);
 
   // Find the target URL based on the closest time that has passed
   for (const line of lines) {
-    const [startTime, url] = line.split(" ");
+    const splits = line.split(" ");
+    const startTime = splits[0];
+    const url = splits.slice(1).join(' ');
     const startTimeInUTC = new Date(startTime);
     const timeDiff = Math.abs(startTimeInUTC - currentTime);
 
@@ -26,7 +28,7 @@ function switchHrefBasedOnTime(timeUrlList) {
     // console.log(startTime, startTimeInUTC, url);
   }
 
-  // console.log(targetUrl);
+  console.log(targetUrl);
 
   if (targetUrl) {
     if (targetUrl.trim().startsWith("<a")) {
