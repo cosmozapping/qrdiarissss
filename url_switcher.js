@@ -34,7 +34,7 @@ function switchHrefBasedOnTime(timeUrlList) {
       tempElement.innerHTML = targetUrl;
 
       // Extract the href attribute
-      targetUrl = tempElement.querySelector("a").getAttribute("href");
+      targetUrl = tempElement.getAttribute("href");
     }
 
     document.querySelector("#redirector").style.display = "block";
