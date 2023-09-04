@@ -30,11 +30,8 @@ function switchHrefBasedOnTime(timeUrlList) {
 
   if (targetUrl) {
     if (targetUrl.trim().startsWith("<a")) {
-      let tempElement = document.createElement("div");
-      tempElement.innerHTML = targetUrl;
-
       // Extract the href attribute
-      targetUrl = tempElement.getAttribute("href");
+      targetUrl = targetUrl.match(/href="([^"]+)"/)[1];
     }
 
     document.querySelector("#redirector").style.display = "block";
