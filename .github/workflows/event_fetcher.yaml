@@ -36,7 +36,7 @@ jobs:
       - name: Modify url_switcher.js with URL's of the day
         run: |
           TIME_URL_LIST_CONTENT=$(<events.txt)
-          awk -v new_content="$TIME_URL_LIST_CONTENT" '/const timeUrlList = `/{print; print new_content; p=1; next} !p; p==1 && /`;/ {print "`;\n"; p=0}' url_switcher.js > /tmp/url_switcher.js.tmp
+          awk -v new_content="$TIME_URL_LIST_CONTENT" '/const timeUrlList = `/{print; print new_content; p=1; next} !p; p==1 && /`;/ {print "`;"; p=0}' url_switcher.js > /tmp/url_switcher.js.tmp
           mv /tmp/url_switcher.js.tmp url_switcher.js
 
       - name: Commit event URL's to JS file
