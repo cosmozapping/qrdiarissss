@@ -25,8 +25,10 @@ jobs:
 
       - name: Get Creds
         run: |
-          echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+          echo "${GOOGLE_CREDENTIALS}" > credentials.json
           cat credentials.json
+        env:
+          GOOGLE_CREDENTIALS: ${{ secrets.GOOGLE_CREDENTIALS }}
 
       - name: Fetch Google Calendar events
         run: |          
