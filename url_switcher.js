@@ -11,7 +11,7 @@ function switchHrefBasedOnTime(timeUrlList) {
   let closestTimeDiff = Infinity;
   let targetUrl = null;
 
-  // console.log(currentTime);
+  console.log(currentTime);
 
   // Find the target URL based on the closest time that has passed
   for (const line of lines) {
