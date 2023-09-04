@@ -1,7 +1,8 @@
 const timeUrlList = `
-2023-08-11T08:30:00+05:30 https://before.example.com
-2023-08-11T14:00:00+05:30 https://after.example.com
+2023-09-04T09:30:00+02:00 <a href="https://www.youtube.com/watch?v=AEKxFlfAdIw">https://www.youtube.com/watch?v=AEKxFlfAdIw</a>
+2023-09-04T15:45:00+02:00 <a href="https://www.youtube.com/watch?v=wQs_48zcd48">https://www.youtube.com/watch?v=wQs_48zcd48</a>
 `;
+
 
 function switchHrefBasedOnTime(timeUrlList) {
   const currentTime = new Date();
