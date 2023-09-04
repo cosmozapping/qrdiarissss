@@ -1,4 +1,4 @@
-## `.github/workflows/event_fetcher.yaml`
+## GitHub Action Workflow: `.github/workflows/event_fetcher.yaml`
 
 - Working:
 	- Using `fetch_events.py` fetches events from google calendar at 1am UTC for the UTC day.
@@ -16,3 +16,4 @@
 ## `index.html`
 
 - Webpage which redirects automatically based on the time of the day using `url_switcher.js`.
+- https://cosmozapping.github.io/qrdiarissss/ (Available via GitHub Pages).
