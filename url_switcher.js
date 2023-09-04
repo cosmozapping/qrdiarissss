@@ -1,7 +1,8 @@
 const timeUrlList = `
 2023-09-04T09:30:00+02:00 <a href="https://www.youtube.com/watch?v=AEKxFlfAdIw">https://www.youtube.com/watch?v=AEKxFlfAdIw</a>
-2023-09-04T15:45:00+02:00 <a href="https://www.youtube.com/watch?v=wQs_48zcd48">https://www.youtube.com/watch?v=wQs_48zcd48</a>
+2023-09-04T15:45:00+02:00 <a href="https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1">https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1</a>
 `;
+
 
 
 function switchHrefBasedOnTime(timeUrlList) {
