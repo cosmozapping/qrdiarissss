@@ -1,4 +1,6 @@
 const timeUrlList = `
+2023-08-11T08:30:00+05:30 https://before.example.com
+2023-08-11T14:00:00+05:30 https://after.example.com
 `;
 
 function switchHrefBasedOnTime(timeUrlList) {
@@ -26,8 +28,21 @@ function switchHrefBasedOnTime(timeUrlList) {
   // console.log(targetUrl);
 
   if (targetUrl) {
-    const anchor = document.getElementById("urlQR");
-    anchor.href = targetUrl;
+    document.querySelector("#redirector").style.display = "block";
+    // Redirect
+    document.location.replace(targetUrl);
+
+    // Fallback redirect
+    const metaRefresh = document.querySelector('meta[http-equiv="refresh"]');
+    metaRefresh.content = `5; url = ${targetUrl}`;
+
+    // Secondary fallback, manual redirect
+    const DOMtargetURL = document.getElementById("targetURL");
+    DOMtargetURL.href = targetUrl;
+    DOMtargetURL.innerText = targetUrl;
+
+    const qrcode = new QRCode("qrcode");
+    qrcode.makeCode(targetUrl);
   }
 }
 
