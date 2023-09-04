@@ -23,9 +23,13 @@ jobs:
       - name: Install dependencies
         run: pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
-      - name: Fetch Google Calendar events
+      - name: Get Creds
         run: |
           echo "${{ secrets.GOOGLE_CREDENTIALS }}" > credentials.json
+          cat credentials.json
+
+      - name: Fetch Google Calendar events
+        run: |          
           python fetch_events.py
 
       - name: Modify url_switcher.js with URL's of the day
