@@ -1,6 +1,6 @@
 const timeUrlList = `
-2023-09-28T00:15:00+02:00 <a href="https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1">https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1</a>
-2023-09-29T00:15:00+02:00 <a href="https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1">https://www.youtube.com/watch?v=l4rEJ7OxVNg&amp;list=RDl4rEJ7OxVNg&amp;start_radio=1</a>
+2023-09-29T00:15:00+02:00 <a href="https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa">https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa</a>
+2023-09-30T00:15:00+02:00 <a href="https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa">https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa</a>
 `;
 
 
