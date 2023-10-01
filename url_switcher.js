@@ -1,6 +1,6 @@
 const timeUrlList = `
-2023-09-30T00:15:00+02:00 <a href="https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa">https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa</a>
 2023-10-01T00:15:00+02:00 <a href="https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa">https://youtu.be/vz42iV-w0zU?si=GQTCxiGbDDXvlbIa</a>
+2023-10-02T00:15:00+02:00 <a href="https://www.huffingtonpost.es/2017/01/26/ciclista-chino-error_n_14410852.html">https://www.huffingtonpost.es/2017/01/26/ciclista-chino-error_n_14410852.html</a>
 `;
 
 
