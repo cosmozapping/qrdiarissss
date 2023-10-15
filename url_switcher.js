@@ -1,6 +1,6 @@
 const timeUrlList = `
-2023-10-14T00:15:00+02:00 <a href="https://youtube.com/watch?v=kWgeVQuM-FU&amp;feature=share7">https://youtube.com/watch?v=kWgeVQuM-FU&amp;feature=share7</a>
 2023-10-15T00:15:00+02:00 <a href="https://youtube.com/watch?v=kWgeVQuM-FU&amp;feature=share7">https://youtube.com/watch?v=kWgeVQuM-FU&amp;feature=share7</a>
+2023-10-16T00:15:00+02:00 <a href="https://youtu.be/cetATq15Lp0?si=2hLUN4k-ORkOpuVL">https://youtu.be/cetATq15Lp0?si=2hLUN4k-ORkOpuVL</a>
 `;
 
 
